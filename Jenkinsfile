@@ -38,6 +38,7 @@ pipeline {
         
         stage("Deploy"){
             steps{
+                echo "This is deploying code"
                 script {
                     docker_compose()
                 }
